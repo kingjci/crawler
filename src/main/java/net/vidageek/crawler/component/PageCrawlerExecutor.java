@@ -24,8 +24,12 @@ final public class PageCrawlerExecutor implements Runnable {
     private final Url urlToCrawl;
     private final ThreadPoolExecutor executor;
 
-    public PageCrawlerExecutor(final Url urlToCrawl, final ThreadPoolExecutor executor, final ExecutorCounter counter,
-            final Downloader downloader, final LinkNormalizer normalizer, final PageVisitor visitor) {
+    public PageCrawlerExecutor(final Url urlToCrawl,
+                               final ThreadPoolExecutor executor,
+                               final ExecutorCounter counter,
+                               final Downloader downloader,
+                               final LinkNormalizer normalizer,
+                               final PageVisitor visitor) {
         this.urlToCrawl = urlToCrawl;
         this.executor = executor;
         this.counter = counter;

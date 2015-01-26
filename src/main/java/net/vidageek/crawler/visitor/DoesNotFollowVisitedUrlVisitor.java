@@ -14,6 +14,10 @@ import net.vidageek.crawler.Url;
  */
 final public class DoesNotFollowVisitedUrlVisitor implements PageVisitor {
 
+    //Attention!!!!!!
+    //这个PageVisitor visitor是用户自定义的visitor，通过在里面完成visit（Page）
+    // 和onError（Url，Status）两个方法，实现对于获取到的web页面的操作，在这两个方法中对
+    //页面进行具体的处理
     private final PageVisitor visitor;
     // Using map since jdk 1.5 does not provide a good concurrent set
     // implementation
@@ -29,6 +33,10 @@ final public class DoesNotFollowVisitedUrlVisitor implements PageVisitor {
             return false;
         }
         visitedUrls.put(url, "");
+
+        //在经过不重复访问Visitor DoesNotFollowVisitedUrlVisitor的不重复访问判断后，
+        // 由用户自定义的PageVisitor作进一步判断，是否对这个页面进行访问。
+        //可以PageVisitor里面套其他类型的PageVisitor作进步一判断
         return visitor.followUrl(url);
     }
 
