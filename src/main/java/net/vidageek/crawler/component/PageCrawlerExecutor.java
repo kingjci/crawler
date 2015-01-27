@@ -2,10 +2,12 @@ package net.vidageek.crawler.component;
 
 import java.util.concurrent.ThreadPoolExecutor;
 
-import net.vidageek.crawler.Page;
-import net.vidageek.crawler.PageVisitor;
-import net.vidageek.crawler.Status;
-import net.vidageek.crawler.Url;
+import net.vidageek.crawler.component.Downloader.Downloader;
+import net.vidageek.crawler.component.LinkNormalizer.LinkNormalizer;
+import net.vidageek.crawler.http.Page;
+import net.vidageek.crawler.visitor.PageVisitor;
+import net.vidageek.crawler.http.Status;
+import net.vidageek.crawler.http.Url;
 
 import org.apache.log4j.Logger;
 

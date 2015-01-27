@@ -1,4 +1,4 @@
-package net.vidageek.crawler;
+package net.vidageek.crawler.http;
 
 /**
  * @author jonasabreu

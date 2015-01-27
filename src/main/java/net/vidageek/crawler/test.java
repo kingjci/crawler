@@ -1,7 +1,7 @@
 package net.vidageek.crawler;
 
-import net.vidageek.crawler.component.DefaultLinkNormalizer;
-import net.vidageek.crawler.component.LinkNormalizer;
+import net.vidageek.crawler.component.LinkNormalizer.impl.DefaultLinkNormalizer;
+import net.vidageek.crawler.component.LinkNormalizer.LinkNormalizer;
 
 
 /**

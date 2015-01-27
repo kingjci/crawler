@@ -1,16 +1,17 @@
 /**
  * 
  */
-package net.vidageek.crawler.component;
+package net.vidageek.crawler.component.Downloader.impl;
 
 import com.ibm.icu.text.CharsetDetector;
 import com.ibm.icu.text.CharsetMatch;
-import net.vidageek.crawler.Page;
-import net.vidageek.crawler.Status;
-import net.vidageek.crawler.config.http.Cookie;
+import net.vidageek.crawler.component.Downloader.Downloader;
+import net.vidageek.crawler.http.Page;
+import net.vidageek.crawler.http.Status;
+import net.vidageek.crawler.http.Cookie;
 import net.vidageek.crawler.exception.CrawlerException;
-import net.vidageek.crawler.page.DefaultPageFactory;
-import net.vidageek.crawler.page.PageFactory;
+import net.vidageek.crawler.http.page.DefaultPageFactory;
+import net.vidageek.crawler.http.page.PageFactory;
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;

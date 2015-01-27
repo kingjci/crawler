@@ -1,11 +1,11 @@
-package net.vidageek.crawler.link;
+package net.vidageek.crawler.component.LinkFinder.impl;
+
+import net.vidageek.crawler.component.LinkFinder.LinksFinder;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import net.vidageek.crawler.LinksFinder;
 
 public class IframeLinkFinder implements LinksFinder {
 

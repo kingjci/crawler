@@ -1,4 +1,4 @@
-package net.vidageek.crawler.component;
+package net.vidageek.crawler.utils;
 
 /**
  * Code copied from HtmlUnit

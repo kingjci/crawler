@@ -2,6 +2,7 @@ package net.vidageek.crawler.link;
 
 import java.util.List;
 
+import net.vidageek.crawler.component.LinkFinder.impl.DefaultLinkFinder;
 import org.junit.Assert;
 import org.junit.Test;
 

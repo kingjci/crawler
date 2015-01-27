@@ -6,11 +6,9 @@ package net.vidageek.crawler.visitor;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import net.vidageek.crawler.ContentVisitor;
-import net.vidageek.crawler.Page;
-import net.vidageek.crawler.PageVisitor;
-import net.vidageek.crawler.Status;
-import net.vidageek.crawler.Url;
+import net.vidageek.crawler.http.Page;
+import net.vidageek.crawler.http.Status;
+import net.vidageek.crawler.http.Url;
 
 /**
  * Simple visitor to crawl a single domain.
@@ -21,9 +19,9 @@ import net.vidageek.crawler.Url;
 public class DomainVisitor implements PageVisitor {
 
     private final String domain;
-    private final ContentVisitor visitor;
+    private final DoesNotFollowVisitedUrlVisitor.ContentVisitor visitor;
 
-    public DomainVisitor(final String baseUrl, final ContentVisitor visitor) {
+    public DomainVisitor(final String baseUrl, final DoesNotFollowVisitedUrlVisitor.ContentVisitor visitor) {
         this.visitor = visitor;
         if ((baseUrl == null) || (baseUrl.trim().length() == 0)) {
             throw new IllegalArgumentException("baseUrl cannot be null or empty");

@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
-import net.vidageek.crawler.page.OkPage;
+import net.vidageek.crawler.http.page.OkPage;
 
 import org.junit.Test;
 import org.junit.experimental.theories.Theories;

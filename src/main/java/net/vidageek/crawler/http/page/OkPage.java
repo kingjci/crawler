@@ -1,16 +1,16 @@
 /**
  * 
  */
-package net.vidageek.crawler.page;
+package net.vidageek.crawler.http.page;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import net.vidageek.crawler.Page;
-import net.vidageek.crawler.Status;
-import net.vidageek.crawler.link.DefaultLinkFinder;
-import net.vidageek.crawler.link.FrameLinkFinder;
-import net.vidageek.crawler.link.IframeLinkFinder;
+import net.vidageek.crawler.http.Page;
+import net.vidageek.crawler.http.Status;
+import net.vidageek.crawler.component.LinkFinder.impl.DefaultLinkFinder;
+import net.vidageek.crawler.component.LinkFinder.impl.FrameLinkFinder;
+import net.vidageek.crawler.component.LinkFinder.impl.IframeLinkFinder;
 
 /**
  * @author jonasabreu

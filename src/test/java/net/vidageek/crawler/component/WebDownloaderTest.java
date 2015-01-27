@@ -1,6 +1,7 @@
 package net.vidageek.crawler.component;
 
-import net.vidageek.crawler.Page;
+import net.vidageek.crawler.component.Downloader.impl.WebDownloader;
+import net.vidageek.crawler.http.Page;
 
 import org.junit.Assert;
 import org.junit.Test;

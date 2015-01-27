@@ -1,17 +1,17 @@
-package net.vidageek.crawler.link;
+package net.vidageek.crawler.component.LinkFinder.impl;
+
+import net.vidageek.crawler.component.LinkFinder.LinksFinder;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import net.vidageek.crawler.LinksFinder;
-
-public class DefaultLinkFinder implements LinksFinder {
+public class FrameLinkFinder implements LinksFinder {
 
 	private final String content;
 
-	public DefaultLinkFinder(final String content) {
+	public FrameLinkFinder(final String content) {
 		if (content == null || "".equals(content.trim())) {
 			throw new IllegalArgumentException("content cannot be null");
 		}
@@ -19,7 +19,7 @@ public class DefaultLinkFinder implements LinksFinder {
 	}
 
 	public List<String> getLinks() {
-		Pattern pattern = Pattern.compile("(?i)(?s)<\\s*?a.*?href=\"(.*?)\".*?>");
+		Pattern pattern = Pattern.compile("(?i)(?s)<\\s*?frame.*?src=\"(.*?)\".*?>");
 		Matcher matcher = pattern.matcher(content);
 
 		List<String> list = new ArrayList<String>();

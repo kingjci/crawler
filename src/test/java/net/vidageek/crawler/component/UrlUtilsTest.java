@@ -2,6 +2,7 @@ package net.vidageek.crawler.component;
 
 import static org.junit.Assert.assertEquals;
 
+import net.vidageek.crawler.utils.UrlUtils;
 import org.junit.Test;
 
 /**

@@ -2,14 +2,18 @@ package net.vidageek.crawler.config;
 
 import java.util.regex.Pattern;
 
-import net.vidageek.crawler.component.DefaultLinkNormalizer;
-import net.vidageek.crawler.component.Downloader;
-import net.vidageek.crawler.component.LinkNormalizer;
-import net.vidageek.crawler.component.WebDownloader;
+import net.vidageek.crawler.component.LinkNormalizer.impl.DefaultLinkNormalizer;
+import net.vidageek.crawler.component.Downloader.Downloader;
+import net.vidageek.crawler.component.LinkNormalizer.LinkNormalizer;
+import net.vidageek.crawler.component.Downloader.impl.WebDownloader;
 
 /**
  * @author jonasabreu
  * 
+ */
+
+/**
+ *
  */
 final public class CrawlerConfiguration {
 

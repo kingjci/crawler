@@ -1,7 +1,7 @@
 /**
  * 
  */
-package net.vidageek.crawler.component;
+package net.vidageek.crawler.component.LinkNormalizer;
 
 /**
  * @author jonasabreu

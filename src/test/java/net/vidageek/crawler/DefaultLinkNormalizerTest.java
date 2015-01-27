@@ -4,7 +4,7 @@
 package net.vidageek.crawler;
 
 import static org.junit.Assert.assertEquals;
-import net.vidageek.crawler.component.DefaultLinkNormalizer;
+import net.vidageek.crawler.component.LinkNormalizer.impl.DefaultLinkNormalizer;
 
 import org.junit.Test;
 

@@ -1,9 +1,9 @@
 /**
  * 
  */
-package net.vidageek.crawler.component;
+package net.vidageek.crawler.component.Downloader;
 
-import net.vidageek.crawler.Page;
+import net.vidageek.crawler.http.Page;
 
 /**
  * @author jonasabreu

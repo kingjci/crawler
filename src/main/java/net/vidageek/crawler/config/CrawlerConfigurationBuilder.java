@@ -1,7 +1,7 @@
 package net.vidageek.crawler.config;
 
-import net.vidageek.crawler.component.Downloader;
-import net.vidageek.crawler.component.LinkNormalizer;
+import net.vidageek.crawler.component.Downloader.Downloader;
+import net.vidageek.crawler.component.LinkNormalizer.LinkNormalizer;
 
 /**
  * WARNING: This class is not thread-safe.

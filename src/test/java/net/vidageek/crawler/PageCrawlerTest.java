@@ -3,11 +3,13 @@
  */
 package net.vidageek.crawler;
 
-import net.vidageek.crawler.component.DefaultLinkNormalizer;
-import net.vidageek.crawler.component.Downloader;
-import net.vidageek.crawler.component.LinkNormalizer;
-import net.vidageek.crawler.page.OkPage;
+import net.vidageek.crawler.component.LinkNormalizer.impl.DefaultLinkNormalizer;
+import net.vidageek.crawler.component.Downloader.Downloader;
+import net.vidageek.crawler.component.LinkNormalizer.LinkNormalizer;
+import net.vidageek.crawler.http.Url;
+import net.vidageek.crawler.http.page.OkPage;
 
+import net.vidageek.crawler.visitor.PageVisitor;
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.junit.After;

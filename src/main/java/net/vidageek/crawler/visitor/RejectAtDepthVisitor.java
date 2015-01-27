@@ -1,9 +1,8 @@
 package net.vidageek.crawler.visitor;
 
-import net.vidageek.crawler.Page;
-import net.vidageek.crawler.PageVisitor;
-import net.vidageek.crawler.Status;
-import net.vidageek.crawler.Url;
+import net.vidageek.crawler.http.Page;
+import net.vidageek.crawler.http.Status;
+import net.vidageek.crawler.http.Url;
 
 /**
  * @author jonasabreu

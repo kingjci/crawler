@@ -1,7 +1,7 @@
-package net.vidageek.crawler.page;
+package net.vidageek.crawler.http.page;
 
-import net.vidageek.crawler.Page;
-import net.vidageek.crawler.Status;
+import net.vidageek.crawler.http.Page;
+import net.vidageek.crawler.http.Status;
 import org.junit.Before;
 import org.junit.Test;
 

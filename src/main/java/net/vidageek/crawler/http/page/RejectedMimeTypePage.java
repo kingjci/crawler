@@ -1,10 +1,10 @@
-package net.vidageek.crawler.page;
+package net.vidageek.crawler.http.page;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import net.vidageek.crawler.Page;
-import net.vidageek.crawler.Status;
+import net.vidageek.crawler.http.Page;
+import net.vidageek.crawler.http.Status;
 
 /**
  * @author jonasabreu
