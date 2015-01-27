@@ -9,7 +9,7 @@ import net.vidageek.crawler.component.LinkNormalizer.LinkNormalizer;
 import net.vidageek.crawler.http.Url;
 import net.vidageek.crawler.http.page.OkPage;
 
-import net.vidageek.crawler.visitor.PageVisitor;
+import net.vidageek.crawler.component.visitor.PageVisitor;
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.junit.After;

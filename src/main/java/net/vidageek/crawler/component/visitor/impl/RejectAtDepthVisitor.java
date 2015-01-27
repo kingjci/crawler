@@ -1,5 +1,6 @@
-package net.vidageek.crawler.visitor;
+package net.vidageek.crawler.component.visitor.impl;
 
+import net.vidageek.crawler.component.visitor.PageVisitor;
 import net.vidageek.crawler.http.Page;
 import net.vidageek.crawler.http.Status;
 import net.vidageek.crawler.http.Url;

@@ -1,8 +1,9 @@
-package net.vidageek.crawler.visitor;
+package net.vidageek.crawler.component.visitor.impl;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import net.vidageek.crawler.component.visitor.PageVisitor;
 import net.vidageek.crawler.http.Page;
 import net.vidageek.crawler.http.Status;
 import net.vidageek.crawler.http.Url;
@@ -48,15 +49,5 @@ final public class DoesNotFollowVisitedUrlVisitor implements PageVisitor {
         visitor.visit(page);
     }
 
-    /**
-     * @author jonasabreu
-     *
-     */
-    public static interface ContentVisitor {
 
-        void visit(Page page);
-
-        void onError(Url errorUrl, Status statusError);
-
-    }
 }

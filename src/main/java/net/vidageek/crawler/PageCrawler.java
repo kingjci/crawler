@@ -14,9 +14,9 @@ import net.vidageek.crawler.config.CrawlerConfiguration;
 import net.vidageek.crawler.exception.CrawlerException;
 import net.vidageek.crawler.http.Url;
 import net.vidageek.crawler.queue.DelayedBlockingQueue;
-import net.vidageek.crawler.visitor.DoesNotFollowVisitedUrlVisitor;
+import net.vidageek.crawler.component.visitor.impl.DoesNotFollowVisitedUrlVisitor;
 
-import net.vidageek.crawler.visitor.PageVisitor;
+import net.vidageek.crawler.component.visitor.PageVisitor;
 import org.apache.log4j.Logger;
 
 /**

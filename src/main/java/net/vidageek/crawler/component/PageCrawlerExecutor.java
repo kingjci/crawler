@@ -5,7 +5,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import net.vidageek.crawler.component.Downloader.Downloader;
 import net.vidageek.crawler.component.LinkNormalizer.LinkNormalizer;
 import net.vidageek.crawler.http.Page;
-import net.vidageek.crawler.visitor.PageVisitor;
+import net.vidageek.crawler.component.visitor.PageVisitor;
 import net.vidageek.crawler.http.Status;
 import net.vidageek.crawler.http.Url;
 

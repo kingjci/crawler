@@ -1,8 +1,9 @@
 /**
  * 
  */
-package net.vidageek.crawler.visitor;
+package net.vidageek.crawler.component.visitor;
 
+import net.vidageek.crawler.component.visitor.impl.DomainVisitor;
 import org.junit.Test;
 
 /**
